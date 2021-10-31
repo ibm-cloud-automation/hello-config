@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: hello:1.0
+        image: hello-image
         ports:
         - containerPort: 1970
         livenessProbe:

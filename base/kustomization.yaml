@@ -4,8 +4,8 @@ kind: Kustomization
 commonLabels:
   app: hello
 images:
-  - name: hello
-    newName: image-registry.openshift-image-registry.svc:5000/showme/hello
+  - name: hello-image
+    newName: image-registry.openshift-image-registry.svc:5000/showme/hello:1.0
 resources:
 - deployment.yaml
 - service.yaml
