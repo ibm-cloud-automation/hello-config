@@ -1,11 +1,10 @@
----
 apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
 commonLabels:
   app: hello
 images:
-  - name: hello-image
-    newName: image-registry.openshift-image-registry.svc:5000/showme/hello:1.0
+- name: hello-image
+  newName: image-registry.openshift-image-registry.svc:5000/showme/hello:d4a2c7a0b368c259888ba4d8e8081247547ef44b
+kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
