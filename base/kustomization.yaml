@@ -3,7 +3,7 @@ commonLabels:
   app: hello
 images:
 - name: hello-image
-  newName: image-registry.openshift-image-registry.svc:5000/showme/hello:d4a2c7a0b368c259888ba4d8e8081247547ef44b
+  newName: image-registry.openshift-image-registry.svc:5000/showme/hello:42052813a2be313fdab89b0eb14e132f8e55b37a
 kind: Kustomization
 resources:
 - deployment.yaml
