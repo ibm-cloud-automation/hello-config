@@ -3,7 +3,7 @@ commonLabels:
   app: hello
 images:
 - name: hello-image
-  newName: de.icr.io/nl82485/demo/hello:ef2f2c2469c5819c3645367245fb8441da308926
+  newName: de.icr.io/nl82485/demo/hello:3a9aaa3f9d22efa24832c18b64f1a16fb9a7da76
 kind: Kustomization
 resources:
 - deployment.yaml
