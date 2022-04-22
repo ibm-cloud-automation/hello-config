@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: hello
+  name: hello
+spec:
+  host: hello.spitfire-37ea8b49e9fa17531ce1c0a302f65936-0000.eu-de.containers.appdomain.cloud
+  port:
+    targetPort: 1970
+  to:
+    kind: Service
+    name: hello
+    weight: 100
+  wildcardPolicy: None
