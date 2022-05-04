@@ -1,10 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
 commonLabels:
   app: hello
 images:
 - name: image-name-placeholder
-  newName: image-registry.openshift-image-registry.svc:5000/demo/hello:12fbc852a0ade9dfa56923a33ec57173b965424b
+  newName: image-registry.openshift-image-registry.svc:5000/raimond-van-stijn-demo/hello:83318a3812f3ad7099af5631d09bd08e791e9424
+kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
